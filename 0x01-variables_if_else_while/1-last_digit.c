@@ -1,1 +1,33 @@
-The string Last digit of, followed by n, followed by the string is, followed by: if the last digit of n is greater than 5: the string and is greater than 5 if the last digit of n is 0: the string and is 0 if the last digit of n is less than 6 and not 0: the string and is less than 6 and not 0 followed by a new line
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+/**
+ * main - main function to generate a random number
+ *
+ * Return: Always 0 (Success)
+ *
+ */
+int main(void)
+{
+	int n;
+	int num;
+
+	srand(time(0));
+	n = rand() -RAND_MAX /2;
+	print(Last digit of %d is ", n);
+	num = n % 10;
+	if (num > 5)
+	{
+		printf("%d and is greater than 5/n", num);
+	}
+	else if ((num < 6) && (num <0))
+	{
+		printf("%d and is less than 6 and not 0\n", num);
+	}
+	else
+	{
+		print("%d and is 0\n", num);
+	}
+	return (0);
+
+}

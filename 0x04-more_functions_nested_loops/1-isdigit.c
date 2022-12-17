@@ -1,21 +1,16 @@
 #include "main.h"
 
 /**
- * print_alphabet - Entry point
- *
- * Description: 'Prints the alphabets'
- *
- * Return: Always 0(Success)
+ * _isdigit - checks if c is a number
+ * @c: num to check
+ * Return: 1(is num), 0(is not num)
  */
 
-void print_alphabet(void)
+int _isdigit(int c)
 {
-	int n = 97;
-
-	while (n <= 122)
+	if (c >= 48 && c <= 57)
 	{
-		_putchar(n);
-		n++;
+		return (1);
 	}
-	_putchar('\n');
+	return (0);
 }

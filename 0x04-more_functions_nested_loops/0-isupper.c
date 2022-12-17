@@ -1,35 +1,16 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
- *
- * Description: 'A program that prints "_putchar"'
- *
- * Return: 0(Success)
+ * _isupper - checks whether a char is upper case
+ * @c: char to check
+ * Return: 1(upper), 0(not upper)
  */
 
-int main(void)
+int _isupper(int c)
 {
-	char a = '_';
-	char b = 'p';
-	char c = 'u';
-	char d = 't';
-	char e = 'c';
-	char f = 'h';
-	char g = 'a';
-	char e = 'r';
-	char f = '\n';
-
-	putchar(a);
-	putchar(b);
-	putchar(c);
-	putchar(d);
-	putchar(e);
-	putchar(f);
-	putchar(g);
-	putchar(h);
-	putchar(i);
-
+	if (c >= 65 && c <= 90)
+	{
+		return (1);
+	}
 	return (0);
-
 }

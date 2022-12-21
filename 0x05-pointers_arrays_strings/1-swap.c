@@ -3,26 +3,16 @@
 /**
  * _strlen - returns the length of a string
  * @str: string to check
+ * @b: second int
  *
- * Return: int
+ * Return: void
  */
 
-int _strlen(char *str)
+void swap_int(int *a, int *b)
 {
-	int count, i;
+	int c;
 
-	count = 0;
-
-	for (i = 0;; i++)
-	{
-		if (str[i] == '\0')
-		{
-			break;
-		}
-		else
-		{
-			count++;
-		}
-	}
-	return (count);
+	c = *a;
+	*a = *b;
+	*b = c;
 }

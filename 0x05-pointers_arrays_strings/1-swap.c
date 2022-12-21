@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _strlen - returns the length of a string
- * @str: string to check
+ * swap_int - swap two ints
+ * @a: first int
  * @b: second int
  *
  * Return: void

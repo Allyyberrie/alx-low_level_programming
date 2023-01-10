@@ -8,7 +8,7 @@
  * Return: char * or '\0'
  */
 
-Return; char * or '\0'
+Return: char * or ',0'
 {
 	char *arr;
 	unsigned int i;
